@@ -16,10 +16,10 @@
     <ArtifactsBaseDirectory Condition="'$(ArtifactsBaseDirectory)' == ''">$(RootDirectory)artifacts\$(BuildConfiguration)\</ArtifactsBaseDirectory>
 
     <!-- Directory with .NET 4.6 binaries -->
-    <ArtifactsDirectory Condition="'$(ArtifactsDirectory)' == ''">$(RootDirectory)UnitTestProject2\UnitTestProject2\bin\Debug\</ArtifactsDirectory>
+    <ArtifactsDirectory Condition="'$(ArtifactsDirectory)' == ''">$(RootDirectory)SmallProject\SmallProject\bin\Release\</ArtifactsDirectory>
 
     <!-- Directory with .NETCore binaries -->
-    <IntermediatesDirectory Condition="'$(IntermediatesDirectory)' == ''">$(RootDirectory)UnitTestProject2\UnitTestProject2\obj\</IntermediatesDirectory>
+    <IntermediatesDirectory Condition="'$(IntermediatesDirectory)' == ''">$(RootDirectory)SmallProject\SmallProject\obj\</IntermediatesDirectory>
   </PropertyGroup>
 
   <ImportGroup>
