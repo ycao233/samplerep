@@ -12,7 +12,7 @@
     <TargetRuntime Condition="'$(TargetRuntime)' == ''">win7-x64</TargetRuntime>
     <IncludeLegacyComponents Condition="'$(IncludeLegacyComponents)' == ''">False</IncludeLegacyComponents>
 
-    <PackagesDirectory Condition="'$(PackagesDirectory)' == ''">$(RootDirectory)packages\</PackagesDirectory>
+    <PackagesDirectory Condition="'$(PackagesDirectory)' == ''">$(RootDirectory)SmallProject\packages\</PackagesDirectory>
     <ArtifactsBaseDirectory Condition="'$(ArtifactsBaseDirectory)' == ''">$(RootDirectory)artifacts\$(BuildConfiguration)\</ArtifactsBaseDirectory>
 
     <!-- Directory with .NET 4.6 binaries -->
@@ -23,8 +23,8 @@
   </PropertyGroup>
 
   <ImportGroup>
-    <Import Project="$(PackagesDirectory)Microbuild.Core\$(MicrobuildVersion)\build\Microbuild.Core.props" />
-    <Import Project="$(PackagesDirectory)Microbuild.Core\$(MicrobuildVersion)\build\Microbuild.Core.targets" />
+    <Import Project="$(PackagesDirectory)Microbuild.Core.$(MicrobuildVersion)\build\Microbuild.Core.props" />
+    <Import Project="$(PackagesDirectory)Microbuild.Core.$(MicrobuildVersion)\build\Microbuild.Core.targets" />
   </ImportGroup>
 
   <ItemGroup>
