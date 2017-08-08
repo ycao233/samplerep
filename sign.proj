@@ -33,7 +33,7 @@
   
   <Target Name="SignAssemblies">    
     <ItemGroup>
-      <AssembliesToSign Include="$(ArtifactsDirectory)UnitTestProject2.dll" />      
+      <AssembliesToSign Include="$(ArtifactsDirectory)SmallProject.dll" />      
     </ItemGroup>
 
     <ItemGroup>
