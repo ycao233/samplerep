@@ -33,7 +33,9 @@
   
   <Target Name="SignAssemblies">    
     <ItemGroup>
-      <AssembliesToSign Include="$(ArtifactsDirectory)SmallProject.dll" />      
+      <!--<AssembliesToSign Include="$(ArtifactsDirectory)SmallProject.dll" /-->
+      <AssembliesToSign Include="$(MSBuildThisFileDirectory)Microsoft.VisualStudio.QualityTools.Common.dll"/>
+      
     </ItemGroup>
 
     <ItemGroup>
