@@ -1,0 +1,10 @@
+steps:
+
+- task: VSTest@2
+  displayName: Run VSTest
+  inputs:
+    testSelector: "testAssemblies"
+    testAssemblyVer2: "**\\*test*.dll\n!**\\*TestAdapter.dll\n!**\\obj\\**"
+    searchFolder: "C:\abc"
+    testRunTitle: "My First Yaml Run"
+    
